@@ -1,0 +1,65 @@
+/* 
+    Name: SomeGrid Css Library
+    Author: https://github.com/mustafabakirci
+    Version: 0.9.1 | 04072019
+    License: none (public domain)
+*/
+
+.d-grid {display: grid;}
+.d-grid-inline { display: inline-grid;}
+
+.gap-10 {grid-gap: 10px;  --per-gap:5px;}
+.gap-15 {grid-gap: 15px;  --per-gap:7.5px;}
+.gap-20 {grid-gap: 20px;  --per-gap:10px;}
+.gap-30 {grid-gap: 30px;  --per-gap:15px;}
+
+.gap-r-10 {grid-row-gap: 10px;}
+.gap-r-15 {grid-row-gap: 15px;}
+.gap-r-20 {grid-row-gap: 20px;}
+.gap-r-30 {grid-row-gap: 30px;}
+
+.gap-c-10 {grid-column-gap: 10px;}
+.gap-c-15 {grid-column-gap: 15px;}
+.gap-c-20 {grid-column-gap: 20px;}
+.gap-c-30 {grid-column-gap: 30px;}
+
+.grid-c-repeat-1 {grid-template-columns: repeat(1, 1fr);}
+.grid-c-repeat-2 {grid-template-columns: repeat(2, 1fr);}
+.grid-c-repeat-3 {grid-template-columns: repeat(3, 1fr);}
+.grid-c-repeat-4 {grid-template-columns: repeat(4, 1fr);}
+.grid-c-repeat-5 {grid-template-columns: repeat(5, 1fr);}
+.grid-c-repeat-6 {grid-template-columns: repeat(6, 1fr);}
+.grid-c-repeat-7 {grid-template-columns: repeat(7, 1fr);}
+.grid-c-repeat-8 {grid-template-columns: repeat(8, 1fr);}
+.grid-c-repeat-9 {grid-template-columns: repeat(9, 1fr);}
+.grid-c-repeat-10 {grid-template-columns: repeat(10, 1fr);}
+.grid-c-repeat-11 {grid-template-columns: repeat(11, 1fr);}
+.grid-c-repeat-12 {grid-template-columns: repeat(12, 1fr);}
+
+.grid-c-75-25 {grid-template-columns:75% 25%;}
+.grid-c-25-75 {grid-template-columns:25% 75%;}
+.grid-c-60-40 {grid-template-columns:60% 40%;}
+.grid-c-40-60 {grid-template-columns:40% 60%;}
+.grid-c-2_50 {grid-template-columns:repeat(2, 50%);}
+.grid-c-3_33 { grid-template-columns:repeat(3, 33.33%);}
+.grid-c-4_25 {grid-template-columns:repeat(4, 25%);}
+.grid-c-5_20 {grid-template-columns:repeat(5, 20%);}
+
+.grid-c-2_50.gap-30 {grid-template-columns: repeat(2, calc(50% - var(--per-gap)));}
+.grid-c-3_33.gap-30 { grid-template-columns:repeat(3, calc(33.33% - var(--per-gap) - 5px));}
+.grid-c-4_25.gap-30 { grid-template-columns:repeat(4, calc(25% - var(--per-gap) - 7.5px));}
+.grid-c-5_20.gap-30 { grid-template-columns:repeat(5, calc(20% - var(--per-gap) - 9px));}
+
+.row-start-1 {grid-row-start:1;} .row-end-1 {grid-row-end:1;}
+.row-start-2 {grid-row-start:2;} .row-end-2 {grid-row-end:2;}
+.row-start-3 {grid-row-start:3;} .row-end-3 {grid-row-end:3;}
+.row-start-4 {grid-row-start:4;} .row-end-4 {grid-row-end:4;}
+.row-start-5 {grid-row-start:5;} .row-end-5 {grid-row-end:5;}
+.row-start-6 {grid-row-start:6;} .row-end-6 {grid-row-end:6;}
+
+.col-start-1 {grid-column-start:1;} .col-end-1 {grid-column-end:1;}
+.col-start-2 {grid-column-start:2;} .col-end-2 {grid-column-end:2;}
+.col-start-3 {grid-column-start:3;} .col-end-3 {grid-column-end:3;}
+.col-start-4 {grid-column-start:4;} .col-end-4 {grid-column-end:4;}
+.col-start-5 {grid-column-start:5;} .col-end-5 {grid-column-end:5;}
+.col-start-6 {grid-column-start:6;} .col-end-6 {grid-column-end:6;}
