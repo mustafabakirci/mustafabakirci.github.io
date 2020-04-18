@@ -1,12 +1,30 @@
-const niceSelectJS = function(selectName) {
+/*  
+  Javascript Nice Select - v1.0
+  https://github.com/mustafabakirci/jquery-nice-select
+  Made by Hernán Sartorio, Developed by Mustafa Bakırcı  
+*/
+
+const niceSelectJS = function(selectName , options) {
+    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    let settings = {};
+    settings.activeMobile = false;
+    for (var userOpt in options) {
+      if (options.hasOwnProperty(userOpt)) {
+          settings[userOpt] = options[userOpt];
+      }
+    }
+    if (!(settings.activeMobile) && isMobile) {
+      return;
+    }
+
     selectName = document.querySelectorAll(selectName);
-    // console.log(selectName);
-  
     selectName.forEach(select => {
       select.style.display = 'none';
+      if (!(select.nextElementSibling)) {
+        create_nice_select(select);
+      }
+
       
-      create_nice_select(select);
-  
     });
   
     function create_nice_select(select) {
